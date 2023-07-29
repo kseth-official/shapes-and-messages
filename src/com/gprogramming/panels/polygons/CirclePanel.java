@@ -15,34 +15,30 @@ public class CirclePanel extends PolygonPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
+        paintCirclePanel(g);
+    }
 
+    private void paintCirclePanel(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
 
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
-        // Heart scale factor and rotation calculation
-        double scale;
+        this.polygonScale = UI.isSurpriseDisplaying ? Math.sin(Math.PI * UI.currentFrame / UI.FRAME_RATE) : 0;
 
-        if (UI.isSurpriseDisplaying)
-            scale = Math.sin(Math.PI * UI.currentFrame / UI.FRAME_RATE);
-        else
-            scale = 0;
+        g2d.translate(w / 2, h / 2);
+
+        g2d.scale(this.polygonScale, this.polygonScale);
 
         g2d.setColor(polygonColor);
 
-        // Translate the circle to the center of the panel
-        g2d.translate(w / 2, h / 2);
+        paintCircle(g2d);
 
-        // Scale the circle
-        g2d.scale(scale, scale);
+        colourChangeCounter++;
+    }
 
-        g.setColor(polygonColor);
-
-        // Draw a circle of radius
+    private void paintCircle(Graphics2D g2d) {
         g2d.fillOval(-3 * radius, -radius, 2 * radius, 2 * radius);
         g2d.fillOval(-radius, -radius, 2 * radius, 2 * radius);
         g2d.fillOval(radius, -radius, 2 * radius, 2 * radius);
-
-        colourChangeCounter++;
     }
 }
