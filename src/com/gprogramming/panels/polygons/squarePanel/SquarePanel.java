@@ -1,7 +1,8 @@
-package com.gprogramming.panels.polygons;
+package com.gprogramming.panels.polygons.squarePanel;
 
 import com.gprogramming.enums.SquarePosition;
 import com.gprogramming.UI;
+import com.gprogramming.panels.polygons.PolygonPanel;
 
 import java.awt.*;
 import java.awt.geom.GeneralPath;

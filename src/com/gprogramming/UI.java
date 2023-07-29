@@ -6,7 +6,7 @@ import com.gprogramming.panels.polygons.CirclePanel;
 import com.gprogramming.panels.polygons.HeartPanel;
 import com.gprogramming.panels.PolygonDisplayPanel;
 import com.gprogramming.panels.polygons.PolygonPanel;
-import com.gprogramming.panels.polygons.SquarePanel;
+import com.gprogramming.panels.polygons.squarePanel.SquarePanel;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
