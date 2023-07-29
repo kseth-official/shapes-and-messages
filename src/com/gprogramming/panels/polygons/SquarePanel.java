@@ -2,7 +2,7 @@ package com.gprogramming.panels.polygons;
 
 import com.gprogramming.enums.SquarePosition;
 import com.gprogramming.UI;
-import com.gprogramming.util.painting.squarePainter.*;
+import com.gprogramming.utility.painting.squarePainter.*;
 
 import java.awt.*;
 import java.util.Objects;
