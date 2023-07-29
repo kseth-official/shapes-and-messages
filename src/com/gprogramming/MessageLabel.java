@@ -15,7 +15,6 @@ public class MessageLabel extends JLabel implements Subject, Observer {
     private final int TIMER_DELAY = UI.FRAME_DELAY * 4;
     private final int FONT_SIZE = 24;
     private final String FONT_NAME = "Times New Roman";
-
     private Thread renderingThread;
     private String message;
     private Timer timer;
