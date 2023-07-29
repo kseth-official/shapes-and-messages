@@ -15,8 +15,8 @@ import java.awt.event.ActionListener;
 public class UI extends JFrame {
     public static final String MESSAGE = "<b>Hi insert_name,<br><br>This is a sample message<br><br>This is a sample message<br><br>This is a sample message<br><br>concluding_line<br><br>signoff<br>insert_name<br></b>";
 
-    public static final int TICK_RATE = 128;
-    public static final int TICK_DELAY = 1000 / TICK_RATE; // in milliseconds
+    public static final int FRAME_RATE = 128;
+    public static final int FRAME_DELAY = 1000 / FRAME_RATE; // in milliseconds
 
     public static final int FRAME_WIDTH = 500;
     public static final int FRAME_HEIGHT = 500;
@@ -53,11 +53,11 @@ public class UI extends JFrame {
     }
 
     private void setupTimer() {
-        this.timer = new Timer(TICK_DELAY, new ActionListener() {
+        this.timer = new Timer(FRAME_DELAY, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (currentFrame <= TICK_RATE) {
-                    currentFrame = (currentFrame & (UI.TICK_RATE - 1)) + 1;
+                if (currentFrame <= FRAME_RATE) {
+                    currentFrame = (currentFrame & (UI.FRAME_RATE - 1)) + 1;
                 }
                 repaintUI();
             }
