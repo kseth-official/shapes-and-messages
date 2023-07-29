@@ -38,7 +38,7 @@ public abstract class PolygonPanel extends JPanel {
 
     protected void changePolygonColor() {
         // Check if counter is a power of 2
-        if ((colourChangeCounter & (UI.FRAME_RATE / 8 - 1)) == 0) {
+        if ((colourChangeCounter & (UI.TICK_RATE / 8 - 1)) == 0) {
             // Change the color of the heart
             Random rng = new Random();
             this.red = Math.abs(rng.nextInt()) & (128 - 1) + 64;
