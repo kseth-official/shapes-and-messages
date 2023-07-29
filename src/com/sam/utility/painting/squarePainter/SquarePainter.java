@@ -1,4 +1,4 @@
-package com.gprogramming.utility.painting.squarePainter;
+package com.sam.utility.painting.squarePainter;
 
 import java.awt.*;
 

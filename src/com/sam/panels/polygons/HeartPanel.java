@@ -1,9 +1,9 @@
-package com.gprogramming.panels.polygons;
+package com.sam.panels.polygons;
 
-import com.gprogramming.enums.HeartAnimation;
-import com.gprogramming.UI;
-import com.gprogramming.observation.Observer;
-import com.gprogramming.observation.Subject;
+import com.sam.enums.HeartAnimation;
+import com.sam.UI;
+import com.sam.observation.Observer;
+import com.sam.observation.Subject;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,10 +13,8 @@ import java.util.List;
 import java.util.Random;
 
 public class HeartPanel extends JPanel implements Subject {
-    // Size in px
-    private final int HEART_WIDTH = 150;
-    private final int HEART_HEIGHT = 120;
-
+    private final int WIDTH_PX = 150;
+    private final int HEIGHT_PX = 120;
     private int x;
     private int y;
     private int w;
@@ -27,6 +25,7 @@ public class HeartPanel extends JPanel implements Subject {
     private int alpha = 255;
     private int colourChangeCounter = 0;
 
+    private int polygonScale;
     private Color heartColor = Color.BLACK;
     private HeartAnimation currentAnimation;
     private List<Observer> observers = new ArrayList<>();

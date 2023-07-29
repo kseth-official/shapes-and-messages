@@ -1,4 +1,4 @@
-package com.gprogramming;
+package com.sam;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,12 +1,12 @@
-package com.gprogramming;
+package com.sam;
 
-import com.gprogramming.enums.HeartAnimation;
-import com.gprogramming.enums.SquarePosition;
-import com.gprogramming.panels.polygons.CirclePanel;
-import com.gprogramming.panels.polygons.HeartPanel;
-import com.gprogramming.panels.PolygonDisplayPanel;
-import com.gprogramming.panels.polygons.PolygonPanel;
-import com.gprogramming.panels.polygons.SquarePanel;
+import com.sam.enums.HeartAnimation;
+import com.sam.enums.SquarePosition;
+import com.sam.panels.polygons.CirclePanel;
+import com.sam.panels.polygons.HeartPanel;
+import com.sam.panels.PolygonDisplayPanel;
+import com.sam.panels.polygons.PolygonPanel;
+import com.sam.panels.polygons.SquarePanel;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

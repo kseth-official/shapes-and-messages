@@ -1,8 +1,8 @@
-package com.gprogramming.panels.polygons;
+package com.sam.panels.polygons;
 
-import com.gprogramming.enums.SquarePosition;
-import com.gprogramming.UI;
-import com.gprogramming.utility.painting.squarePainter.*;
+import com.sam.enums.SquarePosition;
+import com.sam.UI;
+import com.sam.utility.painting.squarePainter.*;
 
 import java.awt.*;
 import java.util.Objects;

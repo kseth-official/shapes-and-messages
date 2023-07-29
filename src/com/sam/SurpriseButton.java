@@ -1,4 +1,4 @@
-package com.gprogramming;
+package com.sam;
 
 import javax.swing.*;
 import javax.swing.border.EtchedBorder;

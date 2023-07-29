@@ -1,6 +1,6 @@
-package com.gprogramming.panels.polygons;
+package com.sam.panels.polygons;
 
-import com.gprogramming.UI;
+import com.sam.UI;
 
 import java.awt.*;
 

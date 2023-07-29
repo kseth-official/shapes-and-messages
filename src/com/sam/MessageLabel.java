@@ -1,7 +1,7 @@
-package com.gprogramming;
+package com.sam;
 
-import com.gprogramming.observation.Observer;
-import com.gprogramming.observation.Subject;
+import com.sam.observation.Observer;
+import com.sam.observation.Subject;
 
 import javax.swing.*;
 import javax.swing.border.EtchedBorder;
