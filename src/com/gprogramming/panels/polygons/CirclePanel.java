@@ -1,7 +1,6 @@
 package com.gprogramming.panels.polygons;
 
 import com.gprogramming.UI;
-import com.gprogramming.observerPattern.Subject;
 
 import java.awt.*;
 

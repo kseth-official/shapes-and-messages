@@ -7,13 +7,10 @@ import com.gprogramming.panels.polygons.HeartPanel;
 import com.gprogramming.panels.PolygonDisplayPanel;
 import com.gprogramming.panels.polygons.PolygonPanel;
 import com.gprogramming.panels.polygons.SquarePanel;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.List;
-import java.util.ArrayList;
 
 public class UI extends JFrame {
     public static final String MESSAGE = "<b>Hi insert_name,<br><br>This is a sample message<br><br>This is a sample message<br><br>This is a sample message<br><br>concluding_line<br><br>signoff<br>insert_name<br></b>";
