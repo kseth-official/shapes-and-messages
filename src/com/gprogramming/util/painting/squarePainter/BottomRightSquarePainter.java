@@ -1,4 +1,4 @@
-package com.gprogramming.util.squarePainter;
+package com.gprogramming.util.painting.squarePainter;
 
 import java.awt.*;
 import java.awt.geom.GeneralPath;
