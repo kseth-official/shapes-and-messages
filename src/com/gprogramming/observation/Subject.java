@@ -1,4 +1,4 @@
-package com.gprogramming.observerPattern;
+package com.gprogramming.observation;
 
 public interface Subject {
     void registerObserver(Observer o);

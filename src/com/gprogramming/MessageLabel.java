@@ -1,7 +1,7 @@
 package com.gprogramming;
 
-import com.gprogramming.observerPattern.Observer;
-import com.gprogramming.observerPattern.Subject;
+import com.gprogramming.observation.Observer;
+import com.gprogramming.observation.Subject;
 
 import javax.swing.*;
 import javax.swing.border.EtchedBorder;

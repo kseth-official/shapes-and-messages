@@ -2,8 +2,8 @@ package com.gprogramming.panels.polygons;
 
 import com.gprogramming.enums.HeartAnimation;
 import com.gprogramming.UI;
-import com.gprogramming.observerPattern.Observer;
-import com.gprogramming.observerPattern.Subject;
+import com.gprogramming.observation.Observer;
+import com.gprogramming.observation.Subject;
 
 import javax.swing.*;
 import java.awt.*;

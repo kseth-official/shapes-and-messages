@@ -2,7 +2,6 @@ package com.gprogramming.panels.polygons;
 
 import com.gprogramming.enums.SquarePosition;
 import com.gprogramming.UI;
-import com.gprogramming.observerPattern.Subject;
 
 import java.awt.*;
 import java.awt.geom.GeneralPath;
