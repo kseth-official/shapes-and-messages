@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PolygonDisplayPanel extends JPanel implements Observer {
-    private final int TIMER_DELAY = UI.FRAME_DELAY;
+    private final int TIMER_DELAY = UI.TICK_DELAY;
     private List<PolygonPanel> childPanels = new ArrayList<>();
     private Thread renderingThread;
     private Timer timer;
