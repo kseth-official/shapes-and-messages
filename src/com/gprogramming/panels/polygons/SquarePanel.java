@@ -26,14 +26,18 @@ public class SquarePanel extends PolygonPanel {
 
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
-        // Heart scale factor and rotation calculation
-        double scale = UI.isSurpriseDisplaying ? Math.sin(Math.PI * UI.currentFrame / UI.FRAME_RATE) : 0;
+        this.polygonScale = UI.isSurpriseDisplaying ? Math.sin(Math.PI * UI.currentFrame / UI.FRAME_RATE) : 0;
 
-        // Scale the square
-        g2d.scale(scale, scale);
+        g2d.scale(this.polygonScale, this.polygonScale);
 
         g2d.setColor(polygonColor);
 
+        paintSquare(g2d);
+
+        colourChangeCounter++;
+    }
+
+    private void paintSquare(Graphics2D g2d) {
         double side = w;
         SquarePainter squarePainter = null;
 
@@ -57,7 +61,5 @@ public class SquarePanel extends PolygonPanel {
         if (Objects.nonNull(squarePainter)) {
             squarePainter.paintGraphic(g2d,this.x,this.y,side);
         }
-
-        colourChangeCounter++;
     }
 }
