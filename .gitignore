@@ -1,2 +1,4 @@
-# output director
+# output directory
 out
+# idea directory
+.idea
