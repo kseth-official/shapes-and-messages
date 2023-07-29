@@ -39,7 +39,7 @@ public class SquarePanel extends PolygonPanel {
 
     private void paintSquare(Graphics2D g2d) {
         double side = w;
-        SquarePainter squarePainter = null;
+        ISquarePainter squarePainter = null;
 
         switch (squarePosition) {
             case TOP_LEFT:

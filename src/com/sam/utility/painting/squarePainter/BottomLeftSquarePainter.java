@@ -3,7 +3,7 @@ package com.sam.utility.painting.squarePainter;
 import java.awt.*;
 import java.awt.geom.GeneralPath;
 
-public class BottomLeftSquarePainter implements SquarePainter {
+public class BottomLeftSquarePainter implements ISquarePainter {
     @Override
     public void paintGraphic(Graphics2D g2d, int x, int y, double side) {
         double half = side / 2;
