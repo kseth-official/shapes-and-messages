@@ -56,11 +56,11 @@ public class HeartPanel extends JPanel implements Subject {
         HeartAnimator heartAnimator = null;
 
         if (currentAnimation == HeartAnimation.GROWING) {
-            if (UI.currentFrame == UI.TICK_RATE) {
+            if (UI.currentFrame == UI.FRAME_RATE) {
                 currentAnimation = HeartAnimation.ROTATING;
                 notifyObservers();
             }
-
+            
             heartAnimator = new HeartAnimatorGrowing();
         } else if (currentAnimation == HeartAnimation.ROTATING) {
             heartAnimator = new HeartAnimatorRotating();
@@ -75,7 +75,7 @@ public class HeartPanel extends JPanel implements Subject {
 
     private void changeHeartColor() {
         // Check if counter is a power of 2
-        if ((colourChangeCounter & (UI.TICK_RATE / 8 - 1)) == 0) {
+        if ((colourChangeCounter & (UI.FRAME_RATE / 8 - 1)) == 0) {
             int red = 0;
             int green = 0;
             int blue = 0;
