@@ -1,8 +1,6 @@
-package com.gprogramming.panels.polygons;
+package com.sam.panels.polygons;
 
-import com.gprogramming.UI;
-import com.gprogramming.observerPattern.Observer;
-import com.gprogramming.observerPattern.Subject;
+import com.sam.UI;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,6 +17,8 @@ public abstract class PolygonPanel extends JPanel {
     protected int alpha = 255;
     protected int colourChangeCounter = 0;
     protected Color polygonColor;
+    protected double polygonScale;
+    protected double polygonAngle;
 
     public PolygonPanel(int x, int y, int w, int h) {
         this.x = x;

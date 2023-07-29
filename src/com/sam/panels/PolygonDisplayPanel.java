@@ -1,9 +1,9 @@
-package com.gprogramming.panels;
+package com.sam.panels;
 
-import com.gprogramming.UI;
-import com.gprogramming.observerPattern.Observer;
-import com.gprogramming.observerPattern.Subject;
-import com.gprogramming.panels.polygons.PolygonPanel;
+import com.sam.UI;
+import com.sam.observation.Observer;
+import com.sam.observation.Subject;
+import com.sam.panels.polygons.PolygonPanel;
 
 import javax.swing.*;
 import java.awt.*;

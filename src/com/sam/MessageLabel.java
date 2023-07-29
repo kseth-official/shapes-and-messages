@@ -1,7 +1,7 @@
-package com.gprogramming;
+package com.sam;
 
-import com.gprogramming.observerPattern.Observer;
-import com.gprogramming.observerPattern.Subject;
+import com.sam.observation.Observer;
+import com.sam.observation.Subject;
 
 import javax.swing.*;
 import javax.swing.border.EtchedBorder;
@@ -15,7 +15,6 @@ public class MessageLabel extends JLabel implements Subject, Observer {
     private final int TIMER_DELAY = UI.FRAME_DELAY * 4;
     private final int FONT_SIZE = 24;
     private final String FONT_NAME = "Times New Roman";
-
     private Thread renderingThread;
     private String message;
     private Timer timer;

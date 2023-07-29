@@ -1,4 +1,4 @@
-package com.gprogramming.enums;
+package com.sam.enums;
 
 public enum HeartAnimation {
     GROWING,
