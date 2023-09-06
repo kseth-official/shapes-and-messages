@@ -113,8 +113,6 @@ public class UI extends JFrame {
             if ((i & 1) == 0) {
                 panel = new CirclePanel(0,0, POLYGON_PANEL_WIDTH, POLYGON_PANEL_HEIGHT, (int) Math.ceil(POLYGON_PANEL_WIDTH / Math.sqrt(2)));
             } else {
-                PolygonPanel squarePanel;
-
                 if ((counter & 3) == 0) {
                     panel = new SquarePanel(0, 0, POLYGON_PANEL_WIDTH, POLYGON_PANEL_HEIGHT, SquarePosition.TOP_LEFT);
                 } else if ((counter & 3) == 2) {
